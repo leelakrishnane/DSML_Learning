@@ -1,0 +1,16 @@
+Pitch  Climate   Weather   Temperature
+damp    cool       normal     20
+damp    hot        high       24
+
+Criteria: It is the main mechanism behind the choosing of parent node
+
+Types of Criteria:
+
+1. gini impurity
+2. entropy
+
+Reason for Criteria: It is used to select our parent node of the entire data set
+
+
+
+

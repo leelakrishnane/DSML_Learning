@@ -1,0 +1,44 @@
+Player   Education   Skill_Score    Trophy
+------------------------------------------
+Dhoni      Masters      8              10
+Ashwin     Degree       9               4
+Kohli      Diploma      7               5
+Rohit      Doctrate     9               8
+Raina      MBA          6               7
+
+Linear Regression (Trophy - Target)
+
+x = df[["Education", "Skill_Score"]]
+y = df['Trophy']
+
+Education is in categorical format, so we have to do the feature engineering
+(data wrangling)
+convert the data from categorical data into numerical data.
+
+from sklearn.preprocessing import LabelEncoder
+
+l_e = LabelEncoder()
+df['Education'] = l_e.fit_transform(df[['Education']])
+print(df['Education']
+
+Education
+===============
+Master:   4
+Degree:   0
+Diploma:  1
+Doctrate: 2
+MBA:      3
+
+Player   Education   Skill_Score    Trophy
+------------------------------------------
+Dhoni      4            8              10
+Ashwin     0            9               4
+Kohli      1            7               5
+Rohit      2            9               8
+Raina      3            6               7
+
+from sklearn.preprocessing import OneHotEncoder
+
+OneHotEncoder:
+get_dummies() ---> Pandas
+OneHotEncoder() ---> Scikit

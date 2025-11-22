@@ -1,0 +1,132 @@
+1.
+from sklearn.tree import DecisionTreeRegressor
+from sklearn.tree import DecisionTreeClassifier
+
+2.It is widely used when our data in non-linear
+
+3.It is non-parametric
+
+Algorithm:
+
+Supervised Model Selection Criteria:
+    1. Regression/Classification
+    2. Linear/Non-Linear
+    3. Parametric/Non-Parametric
+
+How Root node is choosen?
+
+It is done by mechanism called "Criteria"
+
+     1. Gini impurity (default criteria)
+     2. Entropy
+
+Both will produce "Information Gain".
+
+year  no_of_room   price   ----> Column conclude (linear and we assume data has linear relationship)
+
+2000    4           40,000
+2001    4           82,000
+2002    5           1, 26, 000
+
+
+year  no_of_room   price   ----> Column conclude (linear and we assume data has linear relationship)
+
+2000    4           40,000
+2001    4           82,000
+2002    5           1, 26, 000
+
+2006    8           60,000
+
+Various parameter which is part of DecisionTree?
+
+1. Criterion
+2. Max Depth
+3. Min Samples Lead
+4. n_jobs
+
+
+DecisionTree and its Activity:
+
+model = DecisionTreeClassifier()
+model.fit(x_train, y_train)
+prediction = model.predict(x_test)
+
+model = DecisionTreeClassifier(criteria = "entropy")
+model.fit(x_train, y_train)
+prediction = model.predict(x_test)
+
+model = DecisionTreeClassifier(criteria = "entropy", min_samples_split=4)
+model.fit(x_train, y_train)
+prediction = model.predict(x_test)
+
+param_grid = {
+                criteria = ['gini','entropy'],
+                min_samples_leaf = [None, 2, 3 ,4],
+                min_samples_split = [0,1,2,3,4],
+                max_depth = [None, 5, 10],
+                n_jobs = [-1,1,2]
+                }
+
+GridSearch, RandomSearch
+
+1st: gini, None, 0, None, -1
+2nd: gini, None, 0, None, 1
+
+
+-------------------------------------------------------
+Type 1:
+
+from sklearn.model_selection import train_test_split
+
+x = df[[]]
+y = df[]
+
+x_train, x_test, y_train, y_test = train_test_split()
+
+Type 2:
+
+from sklearn.model_selection import cross_val_score
+
+
+x = df[[]]
+y = df[]
+
+model = DecisionTreeClassifier()
+
+final_Cross_score = cross_val_score(model, x, y, cv = 5, score="accuracy")
+
+cv1: x_train, x_test, y_train, y_test ----> accuracy_score() ---> 0.9
+cv2: x_train, x_test, y_train, y_test ----> accuracy_score() ---> 0.8
+cv3: x_train, x_test, y_train, y_test ----> accuracy_score() ---> 0.95
+cv4: x_train, x_test, y_train, y_test ----> accuracy_score() ---> 0.88
+cv5: x_train, x_test, y_train, y_test ----> accuracy_score() ---> 0.93
+
+0.9 + 0.8 + 0.95 + 0,88 + 0.93 = 0.90
+
+Type 3 :
+
+Type 2:
+
+from sklearn.model_selection import cross_val_score
+
+
+x = df[[]]
+y = df[]
+
+model = DecisionTreeRegressor()
+
+final_Cross_score = cross_val_score(model, x, y, cv = 5, score="r2")
+
+cv1: x_train, x_test, y_train, y_test ----> accuracy_score() ---> 0.9
+cv2: x_train, x_test, y_train, y_test ----> accuracy_score() ---> 0.8
+cv3: x_train, x_test, y_train, y_test ----> accuracy_score() ---> 0.95
+cv4: x_train, x_test, y_train, y_test ----> accuracy_score() ---> 0.88
+cv5: x_train, x_test, y_train, y_test ----> accuracy_score() ---> 0.93
+
+0.9 + 0.8 + 0.95 + 0,88 + 0.93 = 0.90
+
+
+
+
+
+

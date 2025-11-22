@@ -1,0 +1,96 @@
+Data Science ---> It is the process of understanding the inbuilt pattern,
+analysis, forecasting, prediction of the data.
+
+Structured Data - MACHINE LEARNING
+
+CSV, EXCEL, DB(SQL, ORACLE),JSON
+
+Un-Structured Data - DEEP LEARNING
+
+IMAGES, AUDIOS, VIDEOS,
+
+Semi-Structured Data - NLP, LLM
+
+TEXT
+
+Data Science + Machine Learning
+
+Machine Learning: This is mechanism or algorithm in which it is going to help
+us in prediction and data analysis of structured data through some inbuilt libraries.
+
+Data Analytics:
+
+It is first level to the Data science. Finding and analysing the data and
+showcasing it in picture or visualization way to for the better understanding.
+
+Programming Language:
+
+Primary Focus:
+
+Python(Machine Learning) ---> DA + DS
+
+Secondary Focus:
+
+PowerBI or Tableau ---> DA (Visualization) (DS)
+GITHUB ----> Code Versioning (DA + DS)
+SQL or Oracle or Mongo ----> Storage (DA + DS)
+CSV or EXCEL ---> File Storage(DA + DS)
+
+Optional:
+MS Excel ---> DA
+
+=====================================================================================
+
+Python + Machine Learning
+
+Software Download: https://www.python.org/
+
+3.10 ,3.12, 3.13, 3.14
+
+SDK (Software Development KIT ) or Editor or IDE
+
+IDLE
+Pycharm-(Primary)
+Visual Studio
+Jupyter-(Secondary)
+
+Python Libraries:
+
+1. pandas (file processing, file manipulation, file preprocessing)
+2. numpy   (mathematical, stats)
+3. scikit-learn (machine learning)
+4. matplotlib (visualization)
+5. seaborn (visualization)
+
+6. scipy (stats)
+7. statsmodels(stats)
+
+8. pytorch (Deep Learning)
+9. tensorflow (Deep Learning)
+
+Machine Learning and AI can be achieved without code as well.
+
+NoCode DataScience
+Tool:
+
+Dataikq
+Cloud (Azure)
+CI/CD - Jenkins
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

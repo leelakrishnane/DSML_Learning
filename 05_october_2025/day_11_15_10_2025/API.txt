@@ -1,0 +1,37 @@
+API - Application Program Interface
+
+Python program can be converted into API through one of the following services
+
+1. Flask - Micro services
+2. Django - mvt
+    2.1 model (m)
+    2.2 view (v)
+    2.3 template (t)
+
+Installation 
+pip install flask 
+
+Flow for creation of an API:
+
+Step 1: Install the necessary library 
+Step 2: Convert that program into application 
+Step 3: Test by running an empty application
+    3.1 : IP Address
+    3.2 Port number
+
+Note: We need both IP address and Port number for creation of an application, since we are running it locally. 
+IP addres and port number will be automatically picked by the program. 
+
+
+DNS - 
+FQDI - 
+
+__name__ - double underscore is called as magic method
+
+
+API can be consumed with various methods
+1. through any programming language (python)
+2. through command
+3. through tools (postman or insomania)
+
+Note: Install postman 

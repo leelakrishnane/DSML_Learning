@@ -1,0 +1,12 @@
+dataframe_input = pd.DataFrame(x, columns=col_names)
+print(dataframe_input)
+
+dataframe_output = pd.DataFrame(y, columns=['target_class'])
+print(dataframe_output)
+
+now user pd.contact() method to merge the same
+
+
+common failure:
+1. dont user + operation
+2. try use the axis = 1 or axis = 0 so that you wont get NaN

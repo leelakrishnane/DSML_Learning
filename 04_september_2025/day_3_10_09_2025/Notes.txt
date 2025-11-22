@@ -1,0 +1,16 @@
+List of libraries used. 
+
+File reading and manipulation:
+pandas
+numpy
+
+For Machine learning
+scikit-learn
+
+For Visualization
+matplotlib
+seaborn
+
+For statistics
+scipy
+statsmodels

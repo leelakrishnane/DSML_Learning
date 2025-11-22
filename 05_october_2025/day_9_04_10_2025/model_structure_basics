@@ -1,0 +1,18 @@
+Linear Regression:
+1. based upon the variance between two columns we predict the outcome or prediction or forecast. 
+
+2. Supervised algorithm
+
+3. It can work with single column and also with multiple column 
+
+3.1 Columns are categorised as X and Y 
+
+    3.1.1 x = data or feature data or independent data
+    3.1.2 y = data or target data or dependent data
+
+4. As a developer we will be deciding or by experience we will know what should be our x and what should be our y. 
+
+5. Since the name tells "Regression" output or target will be "Continuous" data
+
+5.1 Input or X  or Feature Data can be continuous or regression. 
+

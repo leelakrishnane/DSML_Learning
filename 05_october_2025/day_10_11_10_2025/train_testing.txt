@@ -1,0 +1,138 @@
+Example:
+
+Year  house_price
+2000    5000
+2001    6000
+2002    7000
+2003    8000
+2004    9000
+2005    10000
+2006    11000
+2007    12000
+2008    13000
+2009    14000
+
+total rows = 10
+x_train, x_test, y_train, y_test = train_test_split(x, y, train_size = 0.7)
+train_size = 0.7 (70%) - 7 rows
+test_size = 0.3  (30%) - 3 rows
+
+x_train, x_test, y_train, y_test = train_test_split(x, y, test_size = 0.3)
+test_size = 0.3 (30%) - 3 rows
+train_size = 0.7 (70%) - 7 rows
+
+
+from sklearn.model_selection import train_test_split
+
+x = df[['Avg. Session Length','Time on App','Time on Website','Length of Membership']]
+y = df['Yearly Amount Spent']
+
+
+x_train, x_test, y_train, y_test = train_test_split(x, y, train_size = 0.7)
+x_train, x_test, y_train, y_test = train_test_split(x, y, test_size = 0.3)
+-----------------------------------------------------------------------------------
+How train and test will happen: Random Sampling
+
+x_train, x_test, y_train, y_test = train_test_split(x, y, train_size = 0.7, random_state = 42)
+
+Year  house_price
+=======================
+2000    5000   (Train)
+2001    6000   (Test)
+2002    7000   (Train)
+2003    8000   (Test)
+2004    9000   (Test)
+2005    10000  (Train)
+2006    11000  (Train)
+2007    12000  (Train)
+2008    13000  (Train)
+2009    14000  (Train)
+
+Random State:
+It is the random value to get generated with same set every time you run the program
+without closing.
+You can specify any number of you wish for it to work. (42 is not mandatory)
+
+Training and Testing Ratio:
+
+70:30(Training:Testing)
+80:20(Training:Testing)
+
+x_train   y_train         model.fit(x_train, y_train)
+2000    5000   (Train)
+2002    7000   (Train)
+2005    10000  (Train)
+2006    11000  (Train)
+2007    12000  (Train)
+2008    13000  (Train)
+2009    14000  (Train)
+
+x_test                   model.predict(x_test)
+2001       (Test)
+2003       (Test)
+2004       (Test)
+
+Prediction:
+
+[6000, 8000, 9000]
+===================================================================
+Why we do train and test?
+
+OverFitting: When model learns all the data about x and y. it will
+lead to overfitting.
+
+UnderFitting : When models trains with fewer set of inputs (x and y). it will lead
+to underfitting.
+================================================================================================
+
+Model Evaluation:
+
+We as user, when we predicted the output using x_test data, then we have to do the validation or
+evaluation.
+
+Evaluation (Metrics) is categorized into two types.
+
+1. Regression
+    1.1 r2_score (values between 0 to 1. anything above 0.75 is said to be good model)
+    1.2 mean_absolute_error
+    1.3 mean_squared_error
+
+2. Classification
+   2.1 accuracy_score
+   2.3 confusion_matrix
+   2.3 classification_report
+   2.4 f1_score
+   2.5 recall
+   2.6 precision
+
+=============================================================================================
+
+What happens if our r2_score shows below 0.5 for regression?
+
+Conclusion:
+
+Model is under performing for the given data.
+
+One of the Solution to better the accuracy:
+
+1. Try with larger rows of data
+(Note: Fewer input sometime may not produce greate accuracy)
+
+Scenario:
+Some time, trained data may be less efficient, but test data
+may have high efficient input.
+
+Resolution: Cross Validation.
+
+Cross Validation is the concept that ensures the overall dataset
+doesnt have partiality.
+
+cv = 5 (training and testing will happen with 5 different sets)
+
+from sklearn.model_selection import cross_val_score
+
+
+
+
+
+

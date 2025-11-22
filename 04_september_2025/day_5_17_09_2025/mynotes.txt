@@ -1,0 +1,10 @@
+# paranthesis () means tuple
+# Square bracket means 
+
+Preprocessing of data
+
+Checking the numeric and non numeric columns 
+Checking the null data
+
+
+When filling with pandas, we can fill both categorical and numerical data. But when we are filling with simpleimputer we can fill only numerical data

@@ -1,0 +1,41 @@
+Process of converting Number from one form to another form 
+
+Feature Scaling (Input Data):
+
+1. Standardization 
+2. Normalization
+
+Library:
+
+1. from sklearn.preprocessing StandardScaler
+2. from sklearn.preprocessing MinMaxScaler
+
+When we should go for this feature scaling ?
+
+1. Whenever we use the model that working based on the distance based algorithm. 
+2. Imagine we have dataset contains following columns 
+    2.1 Price (Rupees - 30000,40000,50000)
+    2.2 No_of _Bedrooms (integer - 2,3,4)
+    2.3 City_rating (2,3,4,5)
+    
+
+
+Supervised:
+1. KNN (K-Nearest Neighbour)
+2. SVM(Support Vector machine)
+
+Unsupervised:
+1. K-Means clustering
+2. DBScan
+3. Hierarical Clustering 
+
+StandardScaler:
+1. It can have negative value
+2. It produces normal distribution
+
+MinMaxScaler:
+1. It will show only positive value
+2. It produces uniform distribution
+
+Distribution:
+How data is spread across the sheet or column. 

@@ -1,0 +1,26 @@
+Visualization:
+Visualization with respect to data science and data analytics can be done in two ways 
+1. Python Library
+    1.1 matplotlib (Basic chart)
+    1.2 seaborn (advanced)
+    Installation: pip install matplotlib
+                  pip install seaborn
+    Visualization chart can be of two types:
+    1. Univariant
+    2. Bivariant   
+General Classification:
+    1. Only Numerical
+    2. Numerical with categorical data
+    3. Numeric with Numeric data
+
+2. PowerBI
+PowerBI is a tool that was developed on top of microsoft excel. 
+PowerBI is interactive Visualization tool
+So PowerBI can be used in two ways 
+1. Through powerBI desktop 
+2. Through powerBI service (Entreprise/ Licensed)
+Note: Cannot access in PowerBI desktop MAC
+
+
+EDA -  Exploratory Data Analysis
+used for finding outliers

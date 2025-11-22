@@ -1,0 +1,41 @@
+Preprocessing is the concept of keeping the dataset prepared for model. 
+1. Null Values
+    1.1 Filling the null Values
+    1.2 Dropping the null values 
+    Library: import pandas
+             from sklearn.impute import simpleImputer
+
+2. Duplicate Finidng
+    2.1 Duplicate Finidng 
+    2.2 Duplicate Removal 
+    Library: import pandas
+
+3. Data Preprocessing(Feature Engineering)
+    3.1 Category to Numerical conversion
+    Library: import pandas
+             from sklearn.preprocessing import LabelEncoder
+             from sklearn.preprocessing import OrdinalEncoder
+
+4. Data Preprocessing(Feature Scaling)
+   Note: One form of Numerical data into Another form of numerical data
+    4.1 Standard Scalar
+    Library: from sklearn.preprocessing import StandardScalar
+
+    4.2 MinMax Scalar   
+    Library: from sklearn.preprocessing import MinMaxScalar              
+
+5. Data Understanding
+    5.1 Input Data
+        Input data can also be called as feature data/ independent data or X Data
+    5.2 Output Data 
+        Output data can also be called as dependent data or target data or Y data
+
+6. Visualization
+   It is the process of representing our input and output data in pictorial or graphical format. 
+   Library: Import matplotlib
+            Import seaborn
+    6.1 Dimension
+        6.1.1 Single Dimension
+        6.1.2 Double Dimension (Scope limited to two dimension) 
+            a. Univariant  (Only one column data)
+            b. Bivariant (Need two columns for the representation)

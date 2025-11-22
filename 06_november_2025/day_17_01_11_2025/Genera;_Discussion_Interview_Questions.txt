@@ -1,0 +1,8 @@
+Que 1
+On what basis the model of supervised learning will be chosen ? either based on input or output ?
+Answer: Output based -  if the requirement is Continuous data then Regression and if the categorical data the  
+
+Que 2:
+
+Que 3:
+What are the different metrices that we can use 
