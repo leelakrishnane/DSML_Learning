@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Breast Cancer Prediction</title>
+    <style>
+        body { font-family: Arial; margin: 30px; }
+        .container { width: 600px; margin: auto; }
+        input { width: 120px; padding: 6px; margin: 3px; }
+        .row { display: flex; flex-wrap: wrap; }
+        button { padding: 10px 20px; margin-top: 15px; }
+        .result { margin-top: 20px; font-size: 20px; font-weight: bold; }
+        .error { margin-top: 20px; color: red; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>Breast Cancer Prediction Form</h2>
+
+    <form method="POST" action="/predict_form">
+        <div class="row">
+            {% for i in range(30) %}
+                <div>
+                    <label>Feature {{ i+1 }}</label><br>
+                    <input type="number" step="any" name="f{{ i }}" required>
+                </div>
+            {% endfor %}
+        </div>
+
+        <button type="submit">Predict</button>
+    </form>
+
+    {% if prediction %}
+        <div class="result">
+            Prediction: {{ prediction }} ({{ raw_pred }})
+        </div>
+    {% endif %}
+
+    {% if error %}
+        <div class="error">
+            Error: {{ error }}
+        </div>
+    {% endif %}
+</div>
+</body>
+</html>

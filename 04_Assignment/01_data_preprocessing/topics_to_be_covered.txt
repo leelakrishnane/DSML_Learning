@@ -1,0 +1,32 @@
+1. Data Cleaning:
+Fixing issues such as:
+1.1 Missing values
+1.2 Duplicate rows
+1.3 Incorrect data types
+1.4 Outliers
+1.5 Inconsistent formatting (e.g., “male”, “M”, “MALE”)
+
+2. Data Transformation
+2.1 Turning data into the right shape or range:
+2.2 Normalization (0–1 scaling)
+2.3 Standardization (mean 0, std 1)
+2.4 Log transform
+2.5 Encoding categorical variables (LabelEncoding, One-Hot)
+2.6 Binning / bucketing
+
+3. Data Integration
+3.1 Combining data from multiple sources:
+3.2 Merging datasets
+3.3 Joining tables
+
+4. Data Reduction
+4.1 Reducing size but keeping important info:
+4.2 Feature selection
+4.3 Dimensionality reduction (PCA)
+4.4 Sampling
+
+5. Feature Engineering
+5.1 Creating new useful features:
+5.2 Date → day, month, weekday
+5.3 Text → word counts, TF-IDF
+5.4 Combining or splitting fields
