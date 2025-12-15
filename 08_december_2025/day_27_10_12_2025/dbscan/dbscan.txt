@@ -1,0 +1,24 @@
+DB Scan means density based spatial clustering
+It doesnt make the cluster to be declined or formed 
+It forms the automatic grouping based on the density
+
+Minimum number of point requried to form a cluster
+Epsilon - maximum distance between two points to be consider as the neighbour 
+
+Flow of DB scanning
+It randomly picks the point and checks for the distance with another point(data) and checks for the minimum points 
+till it attains "core point" and becomes a cluster
+
+If randomly picked point cannot be part of the core point is called as "Noise" (Outlier)
+
+Step 1: Pick up the unvisited point and evaluate the possibility of clustering
+Step 2: Expand the cluster till it attracts the neighbour 
+Step 3: Cluster formation stops if no more point can be added
+
+Attribute: 
+Core-point : Minimum point within an Epsilon range
+Border Point : It might have lesser minimum point but within the epsilon of core point
+Noise POint: Outlier (Noise)
+
+
+

@@ -1,0 +1,20 @@
+Unsupervised Learning is the process of manipulating data without the Target or Label
+
+In Simple Term, the process of doing the activity only with X-data /Input data/
+Independent Data / Feature Data
+
+Types of Unsupervised Learning Algorithms
+1. PCA - Principle Component Analysis
+    1.1 PCA can be part of Feature Extraction
+    1.2 PCA can also be called as Dimensionality Reduction Technique
+2. Clustering
+    2.1 K-Means Clustering
+    2.2 Agglomerative Clustering
+    2.3 Divisive Clustering
+3. DB Scan
+    3.1 This can also be used for finding the outlier
+4. T-SNE (Neighborhood Embedding)
+    4.1 It is used only for Visualization
+    4.2 It is also a kind of Dimensionality Reduction Technique
+    4.3 This can also be used for finding the outlier
+
