@@ -1,0 +1,23 @@
+Association/ Recommendation are similar to KNN Clustering model 
+It can be part of supervised or unsupervised model 
+
+Eg - KNN which is part of supervised algorithm can be termed as a Recommendation style 
+Association -  There are few models algorithm which are specifically designed for association 
+
+Eg. APRIORI
+Association models can be of two types 
+1. Association rule learning (APRIORI)
+2. Association classification 
+
+Recommendation 
+1. Collaborative Filtering (Netflix) - Unsupervised
+2. Content based filtering (Spotify) - Supervised
+
+Program Template
+
+from sklearn.metrics.pairwise import cosine_similarity - Recommendation 
+from mlxtend.frequent_pattern import apriori, association_rules - Association 
+
+Installation 
+
+pip install mlxtend
