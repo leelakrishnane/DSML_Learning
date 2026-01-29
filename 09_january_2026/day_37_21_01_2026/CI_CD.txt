@@ -1,0 +1,34 @@
+Continuous Improvement / Continuous Deployment
+
+Tools: Jenkins / Concourse
+
+GITHUB
+
+Jenkins - In-build Building Orchestration Tool
+
+One Use:
+
+1. Local Code (Master ---> different)
+2. Each Code will be pushed into Branch
+3. Each branch code will be finally merged in to Master
+
+Main Project (Jan 21)
+
+Jan 22: Vasanth Changes will be there.
+  Main + Vasanth ' s Code Merged
+
+Each and Every Feature or New Changes should have test suite.
+
+How it runs:
+
+1. Automated way via GITHUB actions
+   1.1 When Merge
+   1.2 When two approvals done
+
+1. Jenkins ---> Create Build ---> Configure with GITHIB Link
+---> On Every Merge
+
+2. Manually
+   2.1 Go to that build and click on run
+
+3. Scheduling
